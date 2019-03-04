@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./mainStyle.css">
+    <link rel="shortcut icon" href="./pic/IMG_1997.PNG" type="image/x-icon" />
+    <title> บักทึกรายละเอียดการต่อทะเบียน </title>
+</head>
+
+<body>
+
+    <section>
+        <div class="head">
+            <div class="inLine absoluteRight">
+                
+            </div>
+            <div class="">
+                <br />
+                <figure class="img150 imgHead inLine">
+                    <img src="./pic/IMG_1997.PNG" class="img150 imgHead inLine">
+                </figure>
+                <h1 class="inLine">บักทึกรายละเอียดการต่อทะเบียน </h1>
+            </div>
+        </div>
+    </section>
+
+    <br><br>
+
+    <section style="margin-left: 3%;">
+        <div style="width:100">
+            <input class="inputButton" style="padding: 10px ; width:85%" placeholder="ค้นหาชื่อลูกค้า" id="Search">
+            <button class="button green" onclick="Search()" style="width: 8%"> ค้นหา </button>
+        </div>
+
+        <br>
+
+        <div style="width:100">
+            <table style="width:95%">
+                <tr>
+                    <th> ลำดับ </th>
+                    <th> คำนำหน้า </th>
+                    <th> ชื่อจริง - นามสกุล</th>
+                    <th> เบอร์ติดต่อ </th>
+                    <th> รายละเอียด </th>
+                </tr>
+
+                <tr>
+                    <td id="num"> </td>
+                    <td id="title"> </td>
+                    <td id="name"> </td>
+                    <td id="tel"> </td>
+                    <td> <button onclick="showData()" style="" class="blue"> เลือก </button> </td>
+                </tr>
+            </table>
+        </div>
+
+        <br><br>
+
+        <div class="column" style="box-sizing: border-box;border:2px solid black;">
+            <h2> <u> ข้อมูลรถลูกค้า </u></h2>
+            <b> ชื่อ-นามสกุล </b><br><br>
+            <div style="height: 30px; border: 1px solid gray; padding: 5px;">
+                <label id="nameC" style="font-size:18px"> </label>
+            </div>
+            <br>
+            <b> ยี่ห้อรถ </b><br><br>
+            <div style="height: 30px; border: 1px solid gray; padding: 5px;">
+                <label id="brand" style="font-size:18px"> </label>
+            </div>
+            <br>
+            <b> รุ่นรถ </b><br><br>
+            <div style="height: 30px; border: 1px solid gray; padding: 5px;">
+                <label id="model" style="font-size:18px"> </label>
+            </div>
+            <br>
+            <b> ซีรีย์รถ </b><br><br>
+            <div style="height: 30px; border: 1px solid gray; padding: 5px;">
+                <label id="series" style="font-size:18px"> </label>
+            </div>
+            <p></p>
+        </div>
+
+        <div class="column" style="box-sizing: border-box">
+            <h2 style="margin-left: 10%;"> <u> เอกสารที่ต้องเตรียม </u></h2>
+
+            <div style="width:100">
+                <table style="width:85% ;margin-left: 5%;">
+                    <tr>
+                        <th> เอกสาร </th>
+                        <th> มี </th>
+                        <th> ไม่มี </th>
+                    </tr>
+
+                    <tr>
+                        <td> <b> 1. สมุดจดทะเบียน </b></td>
+                        <td> <input type="checkbox" /> </td>
+                        <td> <input type="checkbox" /> </td>
+
+                    </tr>
+
+                    <tr>
+                        <td> <b> 2. หลักฐาน พ.ร.บ. </b></td>
+                        <td> <input type="checkbox" /> </td>
+                        <td> <input type="checkbox" /> </td>
+
+                    </tr>
+
+                    <tr>
+                        <td> <b> 3. เอกสารตรวจรับรองการติดตั้งแก๊ส </b></td>
+                        <td> <input type="checkbox" /> </td>
+                        <td> <input type="checkbox" /> </td>
+
+                    </tr>
+
+                    <tr>
+                        <td> <b> 4. ใบรับรองการตรวจสภาพรถ </b></td>
+                        <td> <input type="checkbox" /> </td>
+                        <td> <input type="checkbox" /> </td>
+
+                    </tr>
+                </table>
+            </div>
+
+            <br>
+            <br>
+            <br>
+            <!--  -->
+            <div class="column" style="box-sizing: border-box">
+                <button class="button blue" style="margin-left: 70%;" onclick="location.href = './appointmentRegister.html'"> ยืนยัน </button>
+            </div>
+
+            <div class="column" style="box-sizing: border-box">
+                <button class="button red" style="margin-left: 10%;" onclick="location.href = './customerRegis.html'"> ยกเลิก </button>
+            </div>
+            <!--  -->
+        </div>
+
+    </section>
+
+    <script>
+
+        var jsNum
+
+        function Search() {
+
+            document.getElementById('Search').style.cssText = "padding: 10px ; width:85%;border: 1px solid #dddddd;"
+
+            if (document.getElementById("Search").value == "จุฑามาศ สร้อยระย้า") {
+
+                document.getElementById('num').innerHTML = 1
+                jsNum = 1;
+                document.getElementById('title').innerHTML = "นางสาว"
+                document.getElementById('name').innerHTML = "จุฑามาศ สร้อยระย้า"
+                document.getElementById('tel').innerHTML = "098-2682596"
+
+            } else if (document.getElementById("Search").value == "") {
+                document.getElementById('Search').style.cssText = "padding: 10px ; width:85%;border: 1px solid rgb(236, 0, 0);"
+                alert("กรุณากรอกข้อมูล")
+                
+            } else {
+                document.getElementById('Search').style.cssText = "padding: 10px ; width:85%;border: 1px solid rgb(236, 0, 0);"
+                alert("ไม่พบข้อมูล")
+            }
+
+        }
+
+        function showData() {
+            if (jsNum == 1) {
+                document.getElementById('nameC').innerHTML = "จุฑามาศ สร้อยระย้า"
+                document.getElementById('brand').innerHTML = "Honda"
+                document.getElementById('model').innerHTML = "Civic"
+                document.getElementById('series').innerHTML = "Type R"
+            } else {
+                document.getElementById('Search').style.cssText = "padding: 10px ; width:85%;border: 1px solid rgb(236, 0, 0);"
+                alert("ไม่พบข้อมูล กรุณาเลือกชื่อลูกค้า")
+            }
+        }
+
+    </script>
+</body>
+
+</html>

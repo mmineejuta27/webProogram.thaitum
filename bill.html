@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="stylesheet" href="./mainStyle.css">
+     <link rel="shortcut icon" href="./pic/IMG_1997.PNG" type="image/x-icon" />
+     <script>
+               function goBack() {
+                 window.history.back();
+               }
+     </script>
+
+     <title>ใบเสร็จรับเงิน</title>
+</head>
+
+<body>
+
+     <body class="bg">
+          <section>
+               <div class="head">
+
+                    <div class="inLine absoluteRight">
+                         
+                    </div>
+                    <div class="">
+                         <br />
+                         <figure class="img150 imgHead inLine">
+                              <img src="./pic/IMG_1997.PNG" class="img150 imgHead inLine">
+                         </figure>
+                         <h1 class="inLine">ใบเสร็จรับเงิน</h1>
+                    </div>
+               </div>
+          </section>
+          <br><br>
+
+          <section>
+               <div style="box-sizing: border-box;">
+                    <div class="rowByMine">
+                         <div class="columnByMine" style="width: 70%; border: 2px solid gray; height: 500px">
+
+                              <div class="columnByMine" style="width:40%; height: 100%">
+                                   <div class="inLine" style="float: left; width: 40%">
+                                        <figure style="margin-left: 2%; width: 300px; height: 480px;">
+                                             <img src="./pic/IMG_1997.PNG" style="width: 450px; height: 450px;">
+                                        </figure>
+                                   </div>
+                              </div>
+                              <div class="columnByMine" style="width:10%; height: 100% ;margin-top: 5% ;">
+                                   <div style="font-size : 20px;">
+                                        <p>ชื่อบริษัท :</p>
+
+                                        <br>
+                                        <p>ที่อยู่บริษัท :</p>
+
+                                        <br>
+                                        <p>ชื่อลูกค้า :</p>
+
+                                        <br>
+                                        <p>ที่อยู่ลูกค้า :</p>
+
+                                        <br>
+                                   </div>
+                              </div>
+                              <div class="columnByMine" style="width: 40%; height: 100% ; margin-top: 5%">
+                                   <div>
+                                        <br/>
+                                        <input type="text" id="inputBrand" name="brand" class="inputData"
+                                             style="width: 100%;">
+                                        <br><br>
+
+                                        <br/>
+                                        <input type="text" id="inputModel" name="model" class="inputData"
+                                             style="width: 100%;">
+                                        <br><br><br>
+
+                                        <input type="text" id="inputSeries" name="series" class="inputData"
+                                             style="width: 100%;">
+                                        <br><br><br>
+
+                                        <input type="text" id="inputTotal" name="total" class="inputData"
+                                             style="width: 100%;">
+                                        <br>
+                                   </div>
+                              </div>
+
+                         </div>
+                         <div class="columnByMine" style="width: 25%; border: 2px solid gray; height: 500px">
+                              <table class="tableData">
+                                   <tr>
+                                        <th>เลขที่ใบเสร็จ</th>
+                                        <td>......</td>
+
+                                   </tr>
+                                   <tr>
+                                        <th>วันที่</th>
+                                        <td>_ / _ / _</td>
+
+                                   </tr>
+                                   <tr>
+                                        <th>ประเภทบิล</th>
+                                        <td>การขาย</td>
+
+                                   </tr>
+                              </table>
+                         </div>
+                    </div>
+               </div>
+          </section>
+          <p></p>
+          <section style="height: 180px; border: 2px solid gray; padding: 10px;">
+               <table class="tableData">
+                    <tr>
+                         <th>ลำดับ</th>
+                         <th>รายการ</th>
+                         <th>จำนวน</th>
+                         <th>ราคาต่อหน่วย</th>
+                         <th>จำนวนเงิน</th>
+
+                    </tr>
+                    <tr>
+                         <td>1</td>
+                         <td>Honda civic</td>
+                         <td>1</td>
+                         <td>1,209,000</td>
+                         <td>1,209,000</td>
+
+                    </tr>
+                    <tr>
+                         <td>2</td>
+                         <td></td>
+                         <td></td>
+                         <td></td>
+                         <td></td>
+
+                    </tr>
+                    <tr>
+                         <td>รวม</td>
+                         <td>หนึ่งล้านสองแสนเก้าพันบาทถ้วน</td>
+                         <td>1</td>
+                         <td></td>
+                         <td>1,209,000</td>
+
+                    </tr>
+               </table>
+          </section>
+          <p></p>
+
+          <section style="height: 180px; border: 2px solid gray; padding: 10px;">
+               <h2 style="text-decoration: underline">ชำระเงินโดย</h2>
+               <div style="font-size:20px;">
+                    <input type="checkbox" id="cash" value="male"> เงินสด<br><br>
+                    <input type="checkbox" id="cash" value="female"> บัตรเครดิต<br>
+               </div>
+          </section>
+          <p></p>
+
+          <section style="height: 150px; border: 2px solid gray; padding: 10px;">
+               <div style="font-size:20px;">
+                    <p> เลขที่อ้างอิง Ref No : ..........................................</p>
+                    <p class="demo"></p> 
+                    <p> ผู้รับเงิน : ......................................................</p>
+                    <p class="demo1"></p>
+               </div>
+
+          </section>
+          <p></p>
+          
+          <section>
+                    <button class="button green" style="width: 12%;margin-left: 57%; margin-right: 2%">พิมพ์เอกสาร</button>
+                    <button class="button blue" style="width: 12%; margin-right: 2%" onclick="location.href = './taxPage.html'">ตกลง</button>
+                    <button class="button red" style="width: 12%; margin-right: 2%" onclick="goBack()">ย้อนกลับ</button>
+          </section>
+
+
+     </body>
+
+</html>

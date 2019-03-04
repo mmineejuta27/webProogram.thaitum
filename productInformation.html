@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="./pic/IMG_1997.PNG" type="image/x-icon" />
+
+  <link rel="stylesheet" href="./mainStyle.css">
+  <title>จัดการข้อมูลสินค้า</title>
+  
+</head>
+
+<body class="bg">
+  <section>
+    <div class="head">
+
+      <div class="inLine absoluteRight">
+          
+      </div>
+      <div class="">
+        <br />
+        <figure class="img150 imgHead inLine">
+          <img src="./pic/IMG_1997.PNG" class="img150 imgHead inLine">
+        </figure>
+        <h1 class="inLine">จัดการข้อมูลสินค้า</h1>
+      </div>
+    </div>
+  </section>
+  <br><br>
+
+  <section>
+    <div>
+      
+      <input type="" id="searchProduct" name="product" placeholder="ค้นหาสินค้า" class="inputTextSearch" style="width:90%;"/>
+
+      <button class="button green" style="width:8%" id="inputBt">ค้นหา</button>
+
+      
+      <br>
+      <br>
+
+      <table class="tableData">
+        <tr>
+          <th>ลำดับ</th>
+          <th>ยี่ห้อ</th>
+          <th>รุ่นรถ</th>
+          <th>ซีรีย์</th>
+          <th>จำนวนคงเหลือ</th>
+          <th>ราคา</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Honda</td>
+          <td>civic</td>
+          <td>type R</td>
+          <td>2</td>
+          <td>150000</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <br>
+  <br>
+  <section>
+    <h2 style="text-decoration: underline">ข้อมูลสินค้า</h2>
+
+    <div class="inLine">
+      <figure class="imgProduct">
+        <img src="./pic/480x480.png" style="width: 300px; height: 400px;">
+      </figure>
+    </div>
+    <div style="display: inline-block; width: 75%;">
+      <label>ยี่ห้อ :</label>
+      <input type="" id="inputBrand" name="brand" class="inputData" style="width: 100%;">
+      <br>
+      <label>รุ่นรถ :</label>
+      <input type="" id="inputModel" name="model" class="inputData" style="width: 100%;">
+      <br>
+      <label>ซีรีย์รถ :</label>
+      <input type="" id="inputSeries" name="series" class="inputData" style="width: 100%;">
+      <br>
+      <label>จำนวนคงเหลือ :</label>
+      <input type="" id="inputTotal" name="total" class="inputData" style="width: 100%;">
+      <br>
+      <label>ราคา :</label>
+      <input type="" id="inputPrice" name="price" class="inputData" style="width: 100%;">
+    </div>
+
+    <div style="text-align: right;margin-right: 2%">
+      <div>
+        <button class="button green padd" onclick="addData() " id="buttonAdd" style="">เพิ่ม</button>
+        <button class="button yellow padd" id="buttonEdit" >แก้ไข</button>
+        <button class="button red padd" id="buttonCancel" onclick="location.href = './Main.html'">ยกเลิก</button>
+      </div>
+      <p class="demo"></p>
+    </div>
+  </section>
+  <br><br><br><br>
+  
+
+  <script>
+    function addData() {
+        var brand = document.getElementById("inputBrand");
+        var model = document.getElementById("inputModel");
+        var series = document.getElementById("inputSeries");
+        var total = document.getElementById("inputTotal");
+        var price = document.getElementById("inputPrice");
+        
+        if(brand.value == ""){
+          brand.style.cssText = "border: 1px solid red; width: 100%; padding: 15px 15px; margin: 8px 0; "
+        }else{
+          brand.style.cssText = "border: 1px solid #ccc; width: 100%; padding: 15px 15px; margin: 8px 0; "
+        }
+        if(model.value == ""){
+          model.style.cssText = "border: 1px solid red; width: 100%; padding: 15px 15px; margin: 8px 0; "
+        }else{
+          model.style.cssText = "border: 1px solid #ccc; width: 100%; padding: 15px 15px; margin: 8px 0; "
+        }
+        if(series.value == ""){
+          series.style.cssText = "border: 1px solid red; width: 100%; padding: 15px 15px; margin: 8px 0; "
+        }else{
+          series.style.cssText = "border: 1px solid #ccc; width: 100%; padding: 15px 15px; margin: 8px 0; "
+        }
+        if(total.value == ""){
+          total.style.cssText = "border: 1px solid red; width: 100%; padding: 15px 15px; margin: 8px 0; "
+        }else{
+          total.style.cssText = "border: 1px solid #ccc; width: 100%; padding: 15px 15px; margin: 8px 0; "
+        }
+        if(price.value == ""){
+          price.style.cssText = "border: 1px solid red; width: 100%; padding: 15px 15px; margin: 8px 0; "
+        }else{
+          price.style.cssText = "border: 1px solid #ccc; width: 100%; padding: 15px 15px; margin: 8px 0; "
+        }
+        if(brand.value != "" && model.value != "" && series.value != "" && total.value != "" && price.value != ""){
+          alert("บันทึกข้อมูลสำเร็จ");
+        }else{
+          alert("โปรดกรอกข้อมูลให้ครบถ้วน");
+        }
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./mainStyle.css">
+    <link rel="shortcut icon" href="./pic/IMG_1997.PNG" type="image/x-icon" />
+    <title>เข้าสู่ระบบ</title>
+    <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+    <style>
+        .font{
+            font-family: 'Kanit', sans-serif;
+        }
+    </style>
+    <script src="./script/login.js">
+    
+    </script>
+</head>
+<body bgcolor="#D8D8D8">
+    <section >
+        <div class="head">
+          
+
+          <div class="">
+            <br/>
+          <figure class="img150 imgHead inLine">
+            <img src="./pic/IMG_1997.PNG" class="img150 imgHead inLine">
+          </figure>
+          <h1 class="textHead inLine">เข้าสู่ระบบ</h1>
+          </div>
+        </div>
+    </section>
+
+    <div class="section2">
+        <div class="container2" >
+            <div class='parent'>
+                <div class='parent'>
+                    <div class="childNoHover">
+                    
+                        <h1 class="textHead font">โชคทวีออโต้เซลล์</h1>
+                    
+                        <P class="textLogin textLeftChild" >ชื่อผู้ใช้ </P>
+                    <input
+                      class= "input60" 
+                      type='text'
+                      style="  width: 60%;
+                      padding: 12px 20px;
+                      margin: 8px 0;
+                      box-sizing: border-box;"
+                      placeholder="Username"
+                      id="user">
+                    <br />
+                        <P class="textLogin textLeftChild">รหัสผ่าน </P>
+                    <input 
+                      class= "input60" 
+                      type='password'
+                      style="  width: 60%;
+                      padding: 12px 20px;
+                      margin: 8px 0;
+                      box-sizing: border-box;"
+                      placeholder="Password"
+                      id="pass">
+                    </input>
+                    <br />
+                    <br />
+                    <button class= 'button blue' id='login' onclick="check()">เข้าสู่ระบบ</button>
+                    <br />
+                    <br />
+                    <button class= 'button green' id='regis' onclick="location.href = './register.html'" >สมัครสมาชิก</button>
+                    <br />
+                    <br />
+                    <p style="margin-right: 5%" class="absoluteRight linkText" onclick="location.href = './forget.html'">ลืมรหัสผ่าน ?</p>
+                    </div>
+                    </div> 
+                    
+                </div>
+          
+            </div>
+
+                    
+        </div>
+    
+</body>
+</html>

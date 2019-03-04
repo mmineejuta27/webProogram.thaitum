@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./mainStyle.css">
+    <link rel="shortcut icon" href="./pic/IMG_1997.PNG" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>บันทึกรายละเอียดการซ่อม</title>
+</head>
+
+<body>
+
+    <section>
+        <div class="head">
+
+            <div class="inLine absoluteRight">
+                
+            </div>
+            <div class="">
+                <br />
+                <figure class="imgHead inLine">
+                    <img src="./pic/IMG_1997.PNG" class="img150 imgHead inLine">
+                </figure>
+                <h1 class="inLine">บันทึกรายละเอียดการซ่อม</h1>
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+    <div class="row" style="width: 80% ; margin-top: 10px;">
+
+        <div class="column-3-in-row ; font-size-head-saveRepair" style="text-align: right; ">
+            เลขที่รายละเอียด (ID)
+        </div>
+
+
+
+        <div class="column-3-in-row" style="width: 50%">
+            <input type="text" style="width: 100%; height: 40px">
+        </div>
+
+        <div class="column-3-in-row ; font-size-head-saveRepair">
+            วันที่ __ / __ / __
+        </div>
+
+    </div>
+
+
+    <br>
+
+    <div class="box1 ; center-window" style="height: 235px">
+
+        <div class="row" style="margin-left: 0px;margin-bottom: 20px;margin-top: 5px">
+            <u style="font-size: 20px">รายละเอียดลูกค้า</u>
+        </div>
+
+
+        <div class="column-2-in-row ; column-size-saveRepair">
+            ชื่อ-นามสกุล <br>
+            <input type="text" class="font-in-box" style="margin-bottom: 5px;"> <br>
+            ยี่ห้อรถ <br>
+            <input type="text" class="font-in-box">
+        </div>
+
+        <div class="column-2-in-row ; column-size-saveRepair">
+            เบอร์โทรติดต่อ <br>
+            <input type="text" class="font-in-box" style="margin-bottom: 5px;"> <br>
+            รุ่นรถ <br>
+            <input type="text" class="font-in-box">
+        </div>
+    </div>
+
+
+    <div class="row" style="width: 99%; margin-top: 10px;margin-left: 1.5%">
+
+        <div class="column-2-in-row" style="float:left ; width: 50%">
+            <div class="box1">
+
+                <div class="row" style="margin-left: 0px">
+                    <u style="font-size: 20px">รายละเอียดการซ่อม ( อะไหล่ )</u>
+                </div>
+
+                <div class="row" style="margin-left: 0px; margin-top: 5px;width: 100%">
+
+                    <div class="column-2-in-row" style="width: 80%">
+                        <div class="inputWithIcon">
+                            <input type="text" placeholder="ค้นหาอะไหล่" style="width:100%">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    
+                    <button class="button folk green" style="width: 15%;margin-top: 1%;margin-left:2%">ค้นหา</button>
+                    
+
+                </div>
+
+                <div class="row ; box-left-saveRepair">
+
+                    ชื่ออะไหล่ <br>
+
+                    <input type="text" style="width:100%">
+
+                </div>
+
+                <div class="row ; box-left-saveRepair">
+
+                    ราคา <br>
+
+                    <input type="text" style="width:100%">
+
+                </div>
+
+                <div class="row ; box-left-saveRepair">
+
+                    จำนวน <br>
+
+                    <input type="text" style="width:100%">
+
+                </div>
+
+
+                <div class="row" style="margin-left: 0px; margin-top: 30px;width: 100%">
+
+                    <div class="column-2-in-row" style="width: 30%;margin-left: 25%;margin-top: 3px;">
+                        <button style="width: 80%" class="button red">ล้างช่อง</button>
+                    </div>
+
+                    <div class="column-2-in-row" style="width : 30%">
+                        <button style="width: 80%" class="button green">เพิ่ม</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="column-2-in-row" style="width:45%;margin-left: 1.5%">
+
+            <table id="t01" style="width:100%;">
+                <tr id="t01">
+                    <th id="t01" class="th-top-border">ลำดับ</th>
+                    <th id="t01" class="th-top-border">ข้อมูลซ่อม</th>
+                    <th id="t01" class="th-top-border">รายการ</th>
+                    <th id="t01" class="th-top-border">จำนวน</th>
+                    <th id="t01" class="th-top-border">ราคา</th>
+                    <th id="t01" class="th-top-border">รวม</th>
+                    <th id="t01" class="th-top-border">ลบ</th>
+                </tr>
+                <tr id="t01">
+                    <td id="t01">1</td>
+                    <td id="t01">ID</td>
+                    <td id="t01">น็อต</td>
+                    <td id="t01">12</td>
+                    <td id="t01">3</td>
+                    <td id="t01">36</td>
+                    <td id="t01"><i class="fa fa-check-square-o"></i></td>
+                </tr>
+                <tr id="t01">
+                    <td id="t01">&nbsp;</td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                </tr>
+                <tr id="t01">
+                    <td id="t01">&nbsp;</td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                </tr>
+                <tr id="t01">
+                    <td id="t01">&nbsp;</td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                </tr>
+                <tr id="t01">
+                    <td id="t01">&nbsp;</td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                </tr>
+                <tr id="t01">
+                    <td id="t01">&nbsp;</td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                </tr>
+                <tr id="t01">
+                    <td id="t01">&nbsp;</td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                </tr>
+                <tr id="t01">
+                    <td id="t01">&nbsp;</td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                </tr>
+                <tr id="t01">
+                    <td id="t01">&nbsp;</td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                </tr>
+                <tr id="t01">
+                    <td id="t01">&nbsp;</td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                </tr>
+                <tr id="t01">
+                    <td id="t01">&nbsp;</td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                    <td id="t01"></td>
+                </tr>
+                <tr id="t01">
+                    <td id="t01" class="th-bottom-border">&nbsp;</td>
+                    <td id="t01" class="th-bottom-border"></td>
+                    <td id="t01" class="th-bottom-border"></td>
+                    <td id="t01" class="th-bottom-border"></td>
+                    <td id="t01" class="th-bottom-border"></td>
+                    <td id="t01" class="th-bottom-border"></td>
+                    <td id="t01" class="th-bottom-border"></td>
+                </tr>
+
+            </table>
+
+            <div class="row" style="width: 100%;margin-top: 4%">
+
+                <div class="column-2-in-row"
+                    style="width: 15%;text-align: left;transform: translateY(55%);font-size: 20px">
+                    ชื่อช่าง
+                </div>
+
+                <div class="column-2-in-row" style="width: 45%;"></div>
+                <input type="text" style="width: 80%;height: 40px;margin-bottom: 5px;border-radius: 5px;"> <br>
+
+            </div>
+
+
+            <div class="row" style="width: 95%; margin-top: 10px;margin-left: 30%">
+                <div class="column-2-in-row" style="width: 40%;margin-top: 3px;">
+                    <button id="button#saveRepair" class="button blue" onclick="location.href = './receiptCar.html'">ยืนยัน</button>
+                </div>
+
+                <div class="column-2-in-row" style="width : 40%">
+                    <button id="button#saveRepair" class="button red" onclick="location.href = './detailRepair.html'">ยกเลิก</button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+    </div>
+    </div>
+
+    </div>
+
+
+</body>
+
+</html>

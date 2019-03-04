@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./mainStyle.css">
+    <link rel="shortcut icon" href="./pic/IMG_1997.PNG" type="image/x-icon" />
+    <title>บันทึกข้อมูลลูกค้าซื้อรถ</title>
+    <script src="./script/customer.js"></script>
+    
+    
+
+    <title> </title>
+</head>
+
+<body>
+    <section >
+                <div class="head">
+                  
+                  <div class="inLine absoluteRight">
+                    
+                </div>
+                  <div class="">
+                    <br/>
+                  <figure class="img150 imgHead inLine">
+                    <img src="./pic/IMG_1997.PNG" class="img150 imgHead inLine">
+                  </figure>
+                  <h1 class="inLine">บันทึกข้อมูลลูกค้าซื้อรถ</h1>
+                  </div>
+                </div>
+        </section>
+
+    <section class="section2">
+        <div class="parentFix">
+            <div class="child fix-flex ">
+                <div class="title">ลูกค้าเก่า</div>
+                <br>
+                <div class="in-child">
+                    <input class="inputByArm is-search" type="" placeholder="ค้นหาลูกค้า" />
+                    &nbsp; &nbsp;
+                    <button class="button arm green" style="padding: 5px 32px;">ค้นหา</button>
+                </div>
+
+
+
+                <div class="in-child">
+                    <table class="table is-information  is-bordered">
+                        <thead>
+                            <tr>
+                                <th>ลำดับ</th>
+                                <th>ชื่อจริง - นามสกุล</th>
+                                <th>เบอร์ติดต่อ</th>
+                                <th>รายละเอียด</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>นิติพล ชิงธงไชย</td>
+                                <td>095-5528406</td>
+                                <td>
+                                    <div><a href="">คลิก</a></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <br><br>
+
+                <div class="in-child left">
+                    <label>ประเภทการทำธุรกรรม</label>
+                    &nbsp; &nbsp;
+                  
+                        <input type="text" name="lname" placeholder="ลูกค้าซื้อรถ" disabled><br>
+                        
+              
+                </div>
+
+                <div class="in-child">
+                    <div class="field-button">
+                        <button class="button arm blue" onclick="location.href = './purchaseDetails.html'">ยืนยัน</button>
+                        <button class="button arm red" onclick="location.href = './Main.html'">ยกเลิก</button>
+                    </div>
+                </div>
+
+            </div>
+
+            &nbsp; &nbsp; &nbsp; &nbsp;
+
+            <div class="child fix-flex ">
+                <div class="title">ลูกค้าใหม่ (สมัครสมาชิก)</div>
+
+
+                <div class="form">
+                    <label> ชื่อจริง - นามสกุล </label>
+                    <input class="inputByArm is-form" id="name" type="" />
+                </div>
+
+
+
+                <div class="form">
+                    <label> บัตรประชาชน </label>
+                    <input class="inputByArm is-form" type="" id="num" maxlength="13" onkeypress="isNumber(event)"/>
+                </div>
+
+                <div class="inline-flex">
+                        <div class="form is-fifth">
+                                <label> วัน/ เดือน/ ปีเกิด </label>
+                            
+                                
+                                <input  class="inputByArm " 
+                                type="date" id="datepicker"
+                                style="font-size: 16px; width: 100%;height: 50%;margin-top: 0.5rem;"/>
+                        </div>
+                        
+                        <div class="form is-icon">
+                                <i class="icon" ><img src="./pic/calender.png"></i>
+                                
+                        </div>
+
+                        <div class="form is-fifth">
+                                    <label> เบอร์ติดต่อ </label>
+                                    <input class="inputByArm is-form" type="" id="phone" maxlength="10" onkeypress="isNumber(event)"/>
+                        </div>
+                </div>
+                    
+                <div class="form">
+                        <label> ที่อยู่ </label><br>
+                        <input class="textArea is-form " id="address"></input>
+                        <br>
+                </div>
+
+
+
+
+                <div class="in-child">
+                    <div class="field-button" style="margin-bottom: 4.5%">
+                        <button class="button arm blue" onclick="check()">ยืนยัน</button>
+                        <button class="button arm red" onclick="location.href = './customerBuy.html'">ล้างข้อมูล</button>
+                    </div>
+                </div>
+               
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
